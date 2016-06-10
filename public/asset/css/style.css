@@ -1,0 +1,55 @@
+.height10{
+  height: 10px;
+}
+.height30{
+  height: 30px;
+}
+
+/* 
+
+	Costumize Layout
+
+ */
+
+ .messageWrapper{
+ 	margin: 5px 0px 0px 250px;
+ 	border-left: 1px solid #E7E7E7;
+ 	padding: 0px 30px;
+ 	position: inherit;
+ }
+
+ .page-header{
+ 	margin:10px 0px 10px;
+ }
+
+ .page-header .dropdown{
+ 	margin-top: 20px;
+ 	margin-bottom: 10px;
+ }
+.page-header .rightButton{
+ 	margin-top: 20px;
+ 	margin-bottom: 10px;
+ }
+
+/* 
+  Fix autocomplete
+ */
+.autocompleteTower{
+  z-index: 100;
+}
+
+.ui-helper-hidden-accessible{
+  display: none;
+}
+
+.navbar-brand{
+	padding-top: 10px;
+}
+
+.sidebar-nav .brand{
+	padding: 20px;
+}
+
+.headerPermit{
+	border-bottom: 1px solid black;
+}
