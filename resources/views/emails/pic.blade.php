@@ -66,6 +66,7 @@ Jakarta Selatan, 12310</small>
 	<tr>
 		<td>Action</td>
 		<td>
+			<li><a href="Route::get('picStatusRespond/{{$data->id }}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusRespond']);">Respond</a></li>
 			<li><a href="http://pi.adr:8000/ticket/picStatusRespond/{{$data->id }}">Respond</a></li>
 			<li><a href="http://pi.adr:8000/ticket/picStatusRecover/{{$data->id }}">Recover</a></li>
 			<li><a href="http://pi.adr:8000/ticket/picStatusResolve/{{$data->id }}">Resolve</a></li>
