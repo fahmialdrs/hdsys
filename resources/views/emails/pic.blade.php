@@ -66,13 +66,11 @@ Jakarta Selatan, 12310</small>
 	<tr>
 		<td>Action</td>
 		<td>
-			<li><a href="Route::get('picStatusRespond/{{$data->id }}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusRespond']);">Respond</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusRespond/{{$data->id }}">Respond</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusRecover/{{$data->id }}">Recover</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusResolve/{{$data->id }}">Resolve</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusClose/{{$data->id }}">Close</a></li>
-	</td>
-
+			<li><a href="{{ URL::route('ticket::picStatusRespond',['id' => $data->id,'pic_status'=>'Respond' ]) }}">Respond</a></li>
+			<li><a href="{{ URL::route('ticket::picStatusRecover',['id' => $data->id,'pic_status'=>'Recover' ]) }}">Recover</a></li>
+			<li><a href="{{ URL::route('ticket::picStatusResolve',['id' => $data->id,'pic_status'=>'Resolve' ]) }}">Resolve</a></li>
+			<li><a href="{{ URL::route('ticket::picStatusClose',['id' => $data->id,'pic_status'=>'Close' ]) }}">Close</a></li>
+		</td>
 	</tr>
 </tbody>
 </table>

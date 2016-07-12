@@ -63,25 +63,18 @@
         	<label>Description</label>
         	<textarea class="form-control" placeholder='Ticket Description'  name='description' >{{ $data->description or '' }}</textarea>
         </div>
-				<div class="form-group col-md-12">
-        	<label>PIC Status Ticket</label>
-        	<input type="text" class="form-control" id="disabledInput" placeholder='PIC Status Ticket'  name='picStatus' value="{{ $data->pic_status}}" disabled />
-        </div>
+				@if(isset($data->pic_status))
+					<div class="form-group col-md-12">
+						<label>PIC Status Ticket</label>
+						<input type="text" class="form-control" id="disabledInput" placeholder='PIC Status Ticket'  name='picStatus' value="{{ $data->pic_status}}" disabled />
+					</div>
+				@endif
+
 
 		<div class="height10"></div>
         <div class="form-group col-md-12">
 			<input  type='submit' value="{{ isset($data->id)? 'Update' : 'Create' }}" class='btn btn-primary'>
 		</div>
-
-		<!-- <div class="height10"></div>
-		<div class="form-group col-md-12">
-		<td>
-			<li><a href="http://pi.adr:8000/ticket/picStatusRespond/{{$data->id }}">Respond</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusRecover/{{$data->id }}">Recover</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusResolve/{{$data->id }}">Resolve</a></li>
-			<li><a href="http://pi.adr:8000/ticket/picStatusClose/{{$data->id }}">Close</a></li>
-		</td>
-	</div> -->
 
 	</div>
 	<div class="col-md-4">
@@ -314,4 +307,5 @@
         			</script>
         </div> -->
 	</div>
+</div>
 </div>

@@ -138,10 +138,10 @@ Route::group(['prefix' => 'ticket','as' => 'ticket::'], function () {
     Route::put('edit/{id}/update', ['as' => 'update', 'uses' => 'TicketController@update']);
 
     Route::get('search', ['as' => 'search', 'uses' => 'TicketController@search']);
-    Route::get('picStatusRespond/{id}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusRespond']);
-    Route::get('picStatusRecover/{id}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusRecover']);
-    Route::get('picStatusResolve/{id}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusResolve']);
-    Route::get('picStatusClose/{id}', ['as' => 'picStatus', 'uses' => 'TicketController@picStatusClose']);
+    Route::get('picStatusRespond/{id}', ['as' => 'picStatusRespond', 'uses' => 'TicketController@picStatusRespond']);
+    Route::get('picStatusRecover/{id}', ['as' => 'picStatusRecover', 'uses' => 'TicketController@picStatusRecover']);
+    Route::get('picStatusResolve/{id}', ['as' => 'picStatusResolve', 'uses' => 'TicketController@picStatusResolve']);
+    Route::get('picStatusClose/{id}', ['as' => 'picStatusClose', 'uses' => 'TicketController@picStatusClose']);
     Route::get('export',['as' => 'export', 'uses' => 'TicketController@export']);
 });
 

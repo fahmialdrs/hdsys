@@ -14,8 +14,8 @@
 		<div class="panel-body">
 			<p></p>
 			<div class="col-md-12">
-        <a class="btn btn-primary btn-lg" href="{{ URL::route('setting::doBackup')}}">Backup</a>   
-        <a class="btn btn-danger" href="{{ URL::route('setting::restoreLastBackup')}}">Restore Last backup</a>   
+        <a class="btn btn-primary btn-lg" href="{{ URL::route('setting::doBackup')}}">Backup</a>
+        <a class="btn btn-danger" href="{{ URL::route('setting::restoreLastBackup')}}">Restore Last backup</a>
       </div>
       <div class="col-md-12">
         <table class="table">
@@ -36,7 +36,7 @@
                 <td>{{($file['size']/1000)}} KB</td>
                 <td>
                   <div class="btn-group">
-                    <a class="btn btn-danger btn-large" href="{{URL::route('setting::restore',['name' => $file['name']])}}">Restore</a> 
+                    <a class="btn btn-danger btn-large" href="{{URL::route('setting::restore',['name' => $file['name']])}}">Restore</a>
                     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="caret"></span>
                       <span class="sr-only">Toggle Dropdown</span>
