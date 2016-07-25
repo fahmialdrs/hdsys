@@ -18,7 +18,7 @@
 
     <!-- <script src="/asset/js/jquery-2.1.4.min.js" charset="utf-8"></script>
     <script src="/asset/js/bootstrap.min.js" charset="utf-8"></script> -->
-    <title>askwd</title>
+    <title>Permit Letter</title>
 </head>
 <body>
 	<div class="container">
@@ -26,10 +26,10 @@
 			<div class="row headerPermit">
 				<div class="col-xs-5">
 					<h2>Permit Letter</h2>
-					<p>Jl. Riau No. 23 Jakarta, 10350 Indonesia Phone: 62-21-3193-5919 Fax: 62-21-3903-473</p>
+					<p>Jalan Margonda Raya No.100, Beji, Jawa Barat</p>
 				</div>
 				<div class="col-xs-7">
-					<img src="{{ public_path('/asset/img/image002.png') }}">
+					<img src="{{ public_path('/asset/img/ug.jpg') }}">
 				</div>
 				<div class="height30"></div>
 			</div>
@@ -132,7 +132,7 @@
 				<div class="height10"></div>
 				<p>Hormat Kami,</p>
 				<p>
-					<strong>PT. Inti Bangun Sejahtera, Tbk</strong>
+					<strong>PT. Tower Provider</strong>
 				</p>
 			</div>
 			</div>

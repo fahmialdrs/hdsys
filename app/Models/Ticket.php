@@ -65,4 +65,10 @@ class Ticket extends Model
       */
         return $this->morphTo();
     }
+
+//    public function pic_status()
+  //  {
+	//      
+//    }
+
 }

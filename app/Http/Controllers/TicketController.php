@@ -135,6 +135,7 @@ class TicketController extends Controller
         $input['status'] = 'open';
         $input['user_id'] = Auth::user()->id;
         //dd($input);
+	$ticket->pic_status = 'Not Respond';
         $ticket->fill($input)->save();
 
         /*
@@ -149,7 +150,7 @@ class TicketController extends Controller
 
             Email Report to Mitra
          */
-        $mail = Ticket::with('tower','category','mitra','assign','pic_status')->findOrFail($ticket->id);
+        $mail = Ticket::with('tower','category','mitra','assign')->findOrFail($ticket->id);
         Mail::send('emails.mitra', ['data' => $mail], function ($m) use ($mail) {
             $m->to($mail->mitra->email, $mail->mitra->name)->subject('Centratama: Penugasan '.$mail->mitra->name);
             //$m->to('foo@example.com');

@@ -26,8 +26,7 @@
         "zizaco/entrust": "dev-laravel-5",
         "guzzlehttp/guzzle": "~5.3|~6.0",
         "barryvdh/laravel-dompdf": "0.6.*",
-        "nicolaslopezj/searchable": "1.*",
-        "guzzlehttp/guzzle": "~5.3|~6.0"
+        "nicolaslopezj/searchable": "1.*"
     },
     "autoload": {
         "classmap": [

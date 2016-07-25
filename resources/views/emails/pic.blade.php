@@ -1,7 +1,6 @@
-<h2>Centratama</h2>
-<small>Pinang 22 Building, 8th Floor
-Jl. Ciputat Raya No. 22A, Pondok Pinang
-Jakarta Selatan, 12310</small>
+<h2>PT. Tower Provider</h2>
+<small>Jalan Margonda Raya No.100, 
+Beji, Jawa Barat</small>
 
 @if($data->assign_type=='team')
 <p>Kepada {{ $user->name }}</p>

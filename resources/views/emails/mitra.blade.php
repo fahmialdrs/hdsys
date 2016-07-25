@@ -1,7 +1,6 @@
-<h2>Centratama</h2>
-<small>Pinang 22 Building, 8th Floor
-Jl. Ciputat Raya No. 22A, Pondok Pinang
-Jakarta Selatan, 12310</small>
+<h2>PT. Tower Provider</h2>
+<small>Jalan Margonda Raya No.100, 
+Beji, Jawa Barat</small>
 
 <p>Kepada {{ $data->mitra->name }}</p>
 <p>Sehubung dengan ticket #{{$data->id}} </p>
@@ -59,5 +58,15 @@ Jakarta Selatan, 12310</small>
 		<td>Tower State</td>
 		<td>{{$data->tower->state}}</td>
 	</tr>
+	<tr>
+                <td>Action</td>
+                <td>
+                        <li><a href="{{ URL::route('ticket::picStatusRespond',['id' => $data->id,'pic_status'=>'Respond' ]) }}">Respond</a></li>
+                        <li><a href="{{ URL::route('ticket::picStatusRecover',['id' => $data->id,'pic_status'=>'Recover' ]) }}">Recover</a></li>
+                        <li><a href="{{ URL::route('ticket::picStatusResolve',['id' => $data->id,'pic_status'=>'Resolve' ]) }}">Resolve</a></li>
+                        <li><a href="{{ URL::route('ticket::picStatusClose',['id' => $data->id,'pic_status'=>'Close' ]) }}">Close</a></li>
+                </td>
+        </tr>
+
 </tbody>
 </table>
